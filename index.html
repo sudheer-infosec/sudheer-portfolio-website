@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Singuru Sudheer — Cybersecurity student, mentor and ethical hacker. SOC, Blue Team, DFIR, threat detection and security research portfolio.">
+  <meta property="og:title" content="SUDHEER.SEC // Cyber Defense Operations">
+  <meta property="og:description" content="Cybersecurity • SOC • DFIR • Threat Investigation">
+  <meta property="og:image" content="https://sudheer-infosec.github.io/profile.jpg">
+  <title>SUDHEER.SEC // Cyber Defense Operations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="boot" class="boot-screen">
+    <div class="boot-box">
+      <div class="boot-logo">&gt;_ SUDHEER.SEC</div>
+      <div id="bootText"></div>
+      <div class="boot-progress"><span id="bootBar"></span></div>
+    </div>
+  </div>
+
+  <canvas id="matrix"></canvas>
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+  <div class="rgb-orb orb-a"></div><div class="rgb-orb orb-b"></div><div class="rgb-orb orb-c"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">&gt;_ SUDHEER<span>.SEC</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+    <nav id="nav">
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#operations">OPS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#services">SERVICES</a>
+      <a href="#certifications">CERTS</a>
+      <a href="#connect">CONNECT</a>
+    </nav>
+    <div class="online"><i></i> SYSTEM ONLINE</div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> CYBERSECURITY • SOC • DFIR • THREAT INVESTIGATION</div>
+        <h1>CYBERSECURITY.<br><span>INVESTIGATION.</span><br><em>DEFENSE.</em></h1>
+        <p class="hero-sub">SINGURU SUDHEER</p>
+        <p class="hero-text">Cybersecurity student, mentor and ethical hacker building practical security labs around SOC operations, threat detection, incident response, digital forensics and security research.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#operations">▶ ENTER CYBER OPS</a>
+          <a class="btn ghost" href="#connect">CONNECT WITH ME ↗</a>
+        </div>
+        <div class="hero-meta">
+          <span>SOC <b>BLUE TEAM</b></span>
+          <span>DFIR <b>INVESTIGATION</b></span>
+          <span>ETHICAL HACKING <b>LABS</b></span>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="profile-card panel">
+          <div class="profile-scan"></div>
+          <div class="profile-photo">
+            <img src="https://sudheer-infosec.github.io/profile.jpg" alt="Singuru Sudheer profile" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+            <div class="profile-fallback">SS</div>
+          </div>
+          <div class="profile-info">
+            <span class="status-chip"><i></i> AVAILABLE FOR CYBER OPPORTUNITIES</span>
+            <h2>Singuru Sudheer</h2>
+            <p>Cybersecurity Analyst • Ethical Hacker • SOC / Blue Team • Digital Forensics</p>
+            <div class="mini-socials">
+              <a href="https://www.linkedin.com/in/singuru-sudheer-b4916b345" target="_blank" rel="noopener">LINKEDIN ↗</a>
+              <a href="https://github.com/sudheer-infosec" target="_blank" rel="noopener">GITHUB ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-terminal panel">
+          <div class="panel-head"><span>LIVE_TERMINAL</span><span class="dots">● ● ●</span></div>
+          <div class="terminal-body" id="terminal"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-title">
+        <div><span class="kicker">01 / PROFILE</span><h2>About <span>Me</span></h2></div>
+        <span class="section-code">IDENTITY // 0xSUDHEER</span>
+      </div>
+      <div class="about-grid">
+        <article class="panel about-main">
+          <span class="quote-mark">“</span>
+          <h3>Cybersecurity. Investigation. Defense.</h3>
+          <p>I’m <strong>Singuru Sudheer</strong>, a cybersecurity-focused student and mentor who enjoys turning security concepts into practical labs and investigation workflows.</p>
+          <p>My portfolio focuses on SOC monitoring, SIEM, log analysis, threat detection, incident response, DFIR, network security, ethical hacking and security automation. I build projects that show not only how an event can happen, but how defenders can detect, investigate, preserve evidence and respond.</p>
+          <div class="about-tags"><span>LEARN</span><span>BUILD</span><span>DETECT</span><span>INVESTIGATE</span><span>DEFEND</span></div>
+        </article>
+        <aside class="panel identity-list">
+          <div><small>FOCUS</small><b>SOC / BLUE TEAM</b></div>
+          <div><small>INVESTIGATION</small><b>DFIR / THREAT HUNTING</b></div>
+          <div><small>OFFENSIVE LABS</small><b>ETHICAL HACKING</b></div>
+          <div><small>TOOLING</small><b>SIEM / CTI / FORENSICS</b></div>
+          <div><small>MISSION</small><b>CONTINUOUS LEARNING ∞</b></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-title">
+        <div><span class="kicker">02 / ARSENAL</span><h2>Security <span>Skills</span></h2></div>
+      </div>
+      <div class="skills-grid">
+        <article class="panel skill-card rgb-cyan"><span class="skill-icon">◈</span><h3>SOC & SIEM</h3><p>Wazuh • Splunk • log analysis • alert triage • correlation</p><div class="skill-line"><i style="width:88%"></i></div></article>
+        <article class="panel skill-card rgb-red"><span class="skill-icon">⌁</span><h3>THREAT DETECTION</h3><p>Sigma • detection logic • IOC analysis • threat hunting</p><div class="skill-line"><i style="width:84%"></i></div></article>
+        <article class="panel skill-card rgb-blue"><span class="skill-icon">⌘</span><h3>DFIR</h3><p>Volatility • evidence handling • memory • network forensics</p><div class="skill-line"><i style="width:82%"></i></div></article>
+        <article class="panel skill-card rgb-purple"><span class="skill-icon">⟁</span><h3>NETWORK SECURITY</h3><p>Wireshark • Nmap • TCP/IP • traffic analysis • Linux</p><div class="skill-line"><i style="width:86%"></i></div></article>
+        <article class="panel skill-card rgb-amber"><span class="skill-icon">✦</span><h3>THREAT INTELLIGENCE</h3><p>MISP • IOC enrichment • OSINT concepts • CTI workflows</p><div class="skill-line"><i style="width:80%"></i></div></article>
+        <article class="panel skill-card rgb-white"><span class="skill-icon">◉</span><h3>SECURITY AUTOMATION</h3><p>Python • Bash • Git/GitHub • repeatable security tooling</p><div class="skill-line"><i style="width:78%"></i></div></article>
+      </div>
+      <div class="tool-cloud panel">
+        <span>WAZUH</span><span>SURICATA</span><span>WIRESHARK</span><span>NMAP</span><span>PYTHON</span><span>LINUX</span><span>SYSMON</span><span>VOLATILITY</span><span>YARA</span><span>SPLUNK</span><span>BURP SUITE</span><span>METASPLOIT</span><span>THEHIVE</span><span>MISP</span><span>COWRIE</span>
+      </div>
+    </section>
+
+    <!-- OPERATIONS -->
+    <section id="operations" class="section">
+      <div class="section-title">
+        <div><span class="kicker">03 / OPERATIONS</span><h2>Cyber Operations <span>Center</span></h2></div>
+        <div class="live-tag"><i></i> SIMULATION ONLINE</div>
+      </div>
+      <div class="ops-hud panel">
+        <div class="hud-label">SECURITY OPERATIONS // REAL-TIME VISUALIZATION</div>
+        <div class="hud-track"><span></span></div>
+        <div class="hud-readouts"><span>THREAT LEVEL <b id="threatLevel">ELEVATED</b></span><span>PACKETS <b id="packetCount">004821</b></span><span>ANALYSTS <b>03</b></span><span>SENSORS <b>08/08</b></span></div>
+      </div>
+      <div class="ops-grid">
+        <article class="panel stat-card"><small>ACTIVE INCIDENTS</small><strong>02</strong><span class="red-text">▲ detection queue</span></article>
+        <article class="panel stat-card"><small>EVENTS / MIN</small><strong id="statEpm">24</strong><span class="cyan-text">telemetry flowing</span></article>
+        <article class="panel stat-card"><small>HOSTS MONITORED</small><strong>08</strong><span class="blue-text">sensors online</span></article>
+        <article class="panel stat-card"><small>CONTAINMENT</small><strong>100%</strong><span class="white-text">controlled lab</span></article>
+      </div>
+      <div class="dashboard-grid">
+        <div class="panel event-panel">
+          <div class="panel-head"><span>LIVE EVENT STREAM</span><button class="mini-btn" id="clearEvents">CLEAR</button></div>
+          <div id="eventStream" class="event-stream"></div>
+        </div>
+        <div class="panel radar-panel">
+          <div class="panel-head"><span>THREAT RADAR</span><span class="cyan-text">LAB-01</span></div>
+          <div class="radar"><div class="sweep"></div><b class="target t1">×</b><b class="target t2">×</b><b class="target t3">×</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE TELECAST -->
+    <section id="telecast" class="section telecast-section">
+      <div class="section-title">
+        <div><span class="kicker">04 / LIVE TELECAST</span><h2>BLACK HAT <span>VS</span> WHITE HAT</h2></div>
+        <span class="section-code">CONTROLLED CYBER-RANGE</span>
+      </div>
+
+      <div class="telecast-frame panel">
+        <div class="telecast-top">
+          <span class="broadcast"><i></i> LIVE // ATTACK SIMULATION</span>
+          <span class="broadcast-time" id="broadcastTime">00:00:00</span>
+          <span class="safe-badge">AUTHORIZED LAB • SYNTHETIC TELEMETRY</span>
+        </div>
+
+        <div class="battle-stage">
+          <div class="packet-lane">
+            <span class="packet p1"></span><span class="packet p2"></span><span class="packet p3"></span>
+            <span class="packet p4"></span><span class="packet p5"></span>
+            <div class="packet-line line-one"></div><div class="packet-line line-two"></div>
+          </div>
+          <div class="hacker-side black-hat">
+            <div class="avatar-face black-face"><span>😈</span></div>
+            <div class="side-label"><small>RED TEAM</small><h3>BLACK HAT</h3><p>ADVERSARY SIMULATION</p></div>
+            <div class="terminal-rain" id="redRain"></div>
+            <div class="attack-pulse"></div>
+          </div>
+
+          <div class="vs-core">
+            <div class="hud-crosshair"></div>
+            <div class="vs-ring"><span>VS</span></div>
+            <div class="connection-beam"></div>
+            <div class="battle-status" id="battleStatus">ATTACK SIGNAL DETECTED</div>
+          </div>
+
+          <div class="hacker-side white-hat">
+            <div class="avatar-face white-face"><span>😎</span></div>
+            <div class="side-label"><small>BLUE TEAM</small><h3>WHITE HAT</h3><p>DEFENSE & RESPONSE</p></div>
+            <div class="defense-radar"><span></span><span></span><span></span></div>
+            <div class="defense-pulse"></div>
+          </div>
+        </div>
+
+        <div class="telemetry-bar">
+          <div><small>ATTACK SIGNAL</small><b class="red-text">DETECTED</b></div>
+          <div><small>SIEM CORRELATION</small><b class="cyan-text">MATCHED</b></div>
+          <div><small>ANALYST ACTION</small><b class="blue-text" id="analystAction">TRIAGE</b></div>
+          <div><small>CONTAINMENT</small><b class="white-text" id="teleContain">READY</b></div>
+        </div>
+
+        <div class="broadcast-console" id="broadcastConsole">
+          <span>[LIVE]</span> Red-team event injected into isolated range...
+          <span>[DETECT]</span> Blue-team telemetry correlation active...
+          <span>[DEFEND]</span> Response workflow standing by...
+        </div>
+        <div class="telecast-controls">
+          <button class="btn primary" id="telecastRun">▶ PLAY LIVE SCENARIO</button>
+          <button class="btn ghost" id="cinematicMode">◉ CINEMATIC MODE</button>
+          <span>Visual simulation only — no real targets, scans or attacks are performed.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RED TEAM -->
+    <section id="redteam" class="section split">
+      <div class="section-title"><div><span class="kicker red-kicker">05 / RED TEAM</span><h2>Adversary <span>Simulation</span></h2></div></div>
+      <div class="red-layout">
+        <div class="panel scenario-card">
+          <div class="panel-head"><span>CONTROLLED ATTACK LAB</span><span class="badge red">AUTHORIZED</span></div>
+          <div class="target-box"><small>TARGET ENVIRONMENT</small><strong>LAB-WEB-01</strong><span>10.10.20.15 · isolated range</span></div>
+          <label>SCENARIO</label>
+          <select id="scenario">
+            <option value="web">Web Application Intrusion Simulation</option>
+            <option value="auth">Authentication Attack Simulation</option>
+            <option value="network">Network Discovery Simulation</option>
+            <option value="malware">Malware Behavior Simulation</option>
+          </select>
+          <button class="btn danger" id="runAttack">⚡ EXECUTE SIMULATION</button>
+          <p class="safe-note">Synthetic events only. No external target is contacted.</p>
+        </div>
+        <div class="panel attack-chain">
+          <div class="panel-head"><span>ATTACK → DETECTION → RESPONSE</span><span id="attackStatus" class="cyan-text">STANDBY</span></div>
+          <div class="chain" id="attackChain">
+            <div>01 <b>RECON</b><small>Discovery</small></div><i>›</i>
+            <div>02 <b>ACCESS</b><small>Simulation</small></div><i>›</i>
+            <div>03 <b>EXECUTION</b><small>Lab event</small></div><i>›</i>
+            <div>04 <b>DETECTION</b><small>SIEM</small></div><i>›</i>
+            <div>05 <b>CONTAIN</b><small>Response</small></div>
+          </div>
+          <pre id="attackConsole" class="console">[READY] Waiting for a controlled scenario...</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLUE TEAM -->
+    <section id="blueteam" class="section">
+      <div class="section-title"><div><span class="kicker blue-kicker">06 / BLUE TEAM</span><h2>Security <span>Operations</span></h2></div></div>
+      <div class="soc-grid">
+        <div class="panel alert-panel">
+          <div class="panel-head"><span>DETECTION QUEUE</span><span class="badge blue">WAZUH STYLE</span></div>
+          <div id="alerts"></div>
+        </div>
+        <div class="panel response-panel">
+          <div class="panel-head"><span>ANALYST RESPONSE</span></div>
+          <div class="response-buttons">
+            <button data-response="Investigating alert correlation">INVESTIGATE</button>
+            <button data-response="IOC added to blocklist">BLOCK IOC</button>
+            <button data-response="Host isolation simulated">ISOLATE HOST</button>
+            <button data-response="Evidence preserved for DFIR">PRESERVE EVIDENCE</button>
+          </div>
+          <div class="response-log" id="responseLog">Awaiting analyst action...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INCIDENT + DFIR -->
+    <section id="incidents" class="section">
+      <div class="section-title"><div><span class="kicker">07 / INCIDENT RESPONSE</span><h2>Incident <span>Command</span></h2></div></div>
+      <div class="panel incident">
+        <div class="incident-top">
+          <div><small>CASE</small><strong>INC-2026-1042</strong></div>
+          <div><small>SEVERITY</small><strong class="red-text">CRITICAL</strong></div>
+          <div><small>STATUS</small><strong id="caseStatus">DETECTION ACTIVE</strong></div>
+          <div><small>TECHNIQUE</small><strong>T1190</strong></div>
+        </div>
+        <div class="timeline" id="timeline"></div>
+        <div class="case-actions"><button class="btn ghost" id="containCase">CONTAIN INCIDENT</button><button class="btn primary" id="closeCase">CLOSE CASE</button></div>
+      </div>
+    </section>
+
+    <section id="dfir" class="section">
+      <div class="section-title"><div><span class="kicker">08 / DFIR</span><h2>Forensics & <span>Evidence</span></h2></div></div>
+      <div class="dfir-grid">
+        <div class="panel evidence">
+          <div class="panel-head"><span>EVIDENCE REGISTER</span><span class="green-text">CHAIN INTACT</span></div>
+          <div class="evidence-row"><b>01</b><span>memory.raw</span><code>SHA256 ✓</code></div>
+          <div class="evidence-row"><b>02</b><span>traffic.pcap</span><code>SHA256 ✓</code></div>
+          <div class="evidence-row"><b>03</b><span>sysmon.evtx</span><code>SHA256 ✓</code></div>
+          <div class="evidence-row"><b>04</b><span>auth.log</span><code>SHA256 ✓</code></div>
+        </div>
+        <div class="panel hash-box">
+          <div class="panel-head"><span>INTEGRITY VERIFICATION</span></div>
+          <div class="hash">9d2f7c8a4e1b0f7e...c31a</div>
+          <div class="hash-bar"><span></span></div>
+          <strong>VERIFIED</strong>
+          <p>Evidence acquisition and integrity checks represented as a controlled demonstration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATT&CK -->
+    <section id="attackmap" class="section">
+      <div class="section-title"><div><span class="kicker">09 / ATT&CK MAPPING</span><h2>Attack <span>Lifecycle</span></h2></div></div>
+      <div class="panel attack-map">
+        <div class="map-line"></div>
+        <div class="tactic active">RECONNAISSANCE<small>01</small></div>
+        <div class="tactic">INITIAL ACCESS<small>02</small></div>
+        <div class="tactic">EXECUTION<small>03</small></div>
+        <div class="tactic">PERSISTENCE<small>04</small></div>
+        <div class="tactic">DISCOVERY<small>05</small></div>
+        <div class="tactic">C2<small>06</small></div>
+        <div class="tactic">EXFILTRATION<small>07</small></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-title"><div><span class="kicker">10 / PORTFOLIO</span><h2>Security <span>Projects</span></h2></div><span class="section-code">FLOATING // ACTIVE</span></div>
+      <div class="cards">
+        <article class="project panel float-card"><span class="project-no">01 // SIEM</span><h3>Wazuh SOC Detection Lab</h3><p>Endpoint telemetry, alert correlation, detection engineering and incident workflows.</p><div><span>SIEM</span><span>LOG ANALYSIS</span><span>IR</span></div></article>
+        <article class="project panel float-card"><span class="project-no">02 // IR</span><h3>TheHive Incident Response</h3><p>Case management, evidence tracking, observables and structured response workflows.</p><div><span>IR</span><span>DFIR</span><span>CASE MGMT</span></div></article>
+        <article class="project panel float-card"><span class="project-no">03 // DETECTION</span><h3>Sigma Detection Rules</h3><p>Portable detection logic for suspicious process, authentication and endpoint events.</p><div><span>SIGMA</span><span>THREAT HUNTING</span></div></article>
+        <article class="project panel float-card"><span class="project-no">04 // FORENSICS</span><h3>Volatility Memory Forensics</h3><p>Memory analysis, process artifacts, network evidence and forensic workflows.</p><div><span>VOLATILITY</span><span>DFIR</span></div></article>
+        <article class="project panel float-card"><span class="project-no">05 // CTI</span><h3>MISP Threat Intelligence</h3><p>IOC enrichment, threat intelligence concepts and structured indicator workflows.</p><div><span>MISP</span><span>CTI</span></div></article>
+        <article class="project panel float-card"><span class="project-no">06 // HONEYPOT</span><h3>Cowrie SSH Honeypot</h3><p>Controlled honeypot telemetry and analysis of simulated malicious behavior.</p><div><span>HONEYPOT</span><span>LOGS</span></div></article>
+        <article class="project panel float-card"><span class="project-no">07 // NETWORK</span><h3>Network Forensics — Wireshark</h3><p>Packet analysis, protocol investigation and suspicious traffic workflows.</p><div><span>PCAP</span><span>WIRESHARK</span></div></article>
+        <article class="project panel float-card"><span class="project-no">08 // MOBILE</span><h3>Mobile Forensics Lab</h3><p>Open-source mobile investigation concepts, artifacts and evidence handling.</p><div><span>MOBILE</span><span>FORENSICS</span></div></article>
+        <article class="project panel float-card"><span class="project-no">09 // EVIDENCE</span><h3>Digital Evidence Chain of Custody</h3><p>Evidence register, hashing and custody workflow for investigation documentation.</p><div><span>HASHING</span><span>CHAIN OF CUSTODY</span></div></article>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="section-title"><div><span class="kicker">11 / WHAT I DO</span><h2>Cybersecurity <span>Services</span></h2></div></div>
+      <div class="services-grid">
+        <article class="panel service-card"><span>01</span><h3>SOC / BLUE TEAM LABS</h3><p>Build and document monitoring, detection, alert triage and incident-response labs.</p></article>
+        <article class="panel service-card"><span>02</span><h3>CYBERSECURITY MENTORING</h3><p>Practical learning guidance across SOC, Blue Team, networking, Linux and security tooling.</p></article>
+        <article class="panel service-card"><span>03</span><h3>SECURITY PROJECT BUILDING</h3><p>Portfolio-ready cybersecurity projects with documentation, workflows and demonstrations.</p></article>
+        <article class="panel service-card"><span>04</span><h3>DFIR / INVESTIGATION PROJECTS</h3><p>Forensics-focused labs covering evidence handling, memory, network and investigation concepts.</p></article>
+        <article class="panel service-card"><span>05</span><h3>SECURITY RESEARCH</h3><p>Controlled research and defensive experimentation around detection and threat intelligence.</p></article>
+        <article class="panel service-card"><span>06</span><h3>RESOURCE CURATION</h3><p>Structured cybersecurity learning resources for beginner-to-advanced study paths.</p></article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="section-title"><div><span class="kicker">12 / CREDENTIALS</span><h2>Certifications <span>Hub</span></h2></div></div>
+      <div class="cert-panel panel">
+        <div class="cert-main">
+          <div class="cert-emblem">◈</div>
+          <div><small>CERTIFICATION ARCHIVE</small><h3>Verified credentials will appear here</h3><p>Certification records, badges and verification links can be added as they become available.</p></div>
+        </div>
+        <div class="soon-box"><span>COMING SOON</span><strong>CERTIFICATIONS</strong><small>STATUS: ARCHIVE READY</small></div>
+      </div>
+    </section>
+
+    <!-- RESOURCE HUB -->
+    <section id="resources" class="section">
+      <div class="section-title"><div><span class="kicker">13 / KNOWLEDGE BASE</span><h2>Cybersecurity <span>Resource Hub</span></h2></div></div>
+      <div class="resource-banner panel">
+        <div><strong>115+</strong><span>Learning resources</span></div>
+        <div><strong>SOC</strong><span>Blue Team</span></div>
+        <div><strong>DFIR</strong><span>Forensics</span></div>
+        <div><strong>∞</strong><span>Continuous learning</span></div>
+        <a class="btn ghost" href="https://sudheer-infosec.github.io/cybersecurity-resource-library/" target="_blank" rel="noopener">OPEN RESOURCE LIBRARY ↗</a>
+      </div>
+    </section>
+
+    <!-- CONNECT -->
+    <section id="connect" class="section connect-section">
+      <div class="section-title">
+        <div><span class="kicker">14 / CONNECT</span><h2>Connect <span>With Me</span></h2></div>
+        <span class="section-code">OPEN CHANNEL // SECURE CONTACT</span>
+      </div>
+      <div class="connect-grid">
+        <div class="panel contact-main">
+          <span class="contact-kicker">LET'S BUILD SOMETHING SECURE.</span>
+          <h3>Have a project, collaboration or cybersecurity opportunity?</h3>
+          <p>Reach me through email, phone, LinkedIn or GitHub. For project discussions, mentoring and cybersecurity collaboration, send a message and I’ll get back to you.</p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:singurusudheer33@gmail.com?subject=Cybersecurity%20Portfolio%20Contact">✉ EMAIL ME</a>
+            <a class="btn ghost" href="tel:+918142455896">☎ CALL ME</a>
+          </div>
+        </div>
+        <div class="panel contact-list">
+          <a href="mailto:singurusudheer33@gmail.com"><small>EMAIL</small><strong>singurusudheer33@gmail.com</strong><span>↗</span></a>
+          <a href="tel:+918142455896"><small>PHONE</small><strong>+91 81424 55896</strong><span>↗</span></a>
+          <a href="https://www.linkedin.com/in/singuru-sudheer-b4916b345" target="_blank" rel="noopener"><small>LINKEDIN</small><strong>Singuru Sudheer</strong><span>↗</span></a>
+          <a href="https://github.com/sudheer-infosec" target="_blank" rel="noopener"><small>GITHUB</small><strong>@sudheer-infosec</strong><span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><b>&gt;_ SUDHEER.SEC</b><span>Cybersecurity · SOC · DFIR · Threat Investigation</span></div>
+    <div class="footer-status"><i></i> CONTROLLED LAB SYSTEMS OPERATIONAL</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
