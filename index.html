@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <meta name="description" content="Singuru Sudheer — Cybersecurity student, mentor and ethical hacker. SOC, Blue Team, DFIR, threat detection and security research portfolio.">
   <meta property="og:title" content="SUDHEER.SEC // Cyber Defense Operations">
   <meta property="og:description" content="Cybersecurity • SOC • DFIR • Threat Investigation">
-  <meta property="og:image" content="https://sudheer-infosec.github.io/profile.jpg">
+  <meta property="og:image" content="assets/profile.jpg">
   <title>SUDHEER.SEC // Cyber Defense Operations</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,18 +67,25 @@
         <div class="profile-card panel">
           <div class="profile-scan"></div>
           <div class="profile-photo">
-            <img src="https://sudheer-infosec.github.io/profile.jpg" alt="Singuru Sudheer profile" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+            <img src="assets/profile.jpg" alt="Singuru Sudheer profile" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
             <div class="profile-fallback">SS</div>
           </div>
           <div class="profile-info">
-            <span class="status-chip"><i></i> AVAILABLE FOR CYBER OPPORTUNITIES</span>
-            <h2>Singuru Sudheer</h2>
-            <p>Cybersecurity Analyst • Ethical Hacker • SOC / Blue Team • Digital Forensics</p>
-            <div class="mini-socials">
-              <a href="https://www.linkedin.com/in/singuru-sudheer-b4916b345" target="_blank" rel="noopener">LINKEDIN ↗</a>
-              <a href="https://github.com/sudheer-infosec" target="_blank" rel="noopener">GITHUB ↗</a>
-            </div>
-          </div>
+  <div class="profile-name">SINGURU</div> 
+    <div class="profile-name">SUDHEER</div>
+
+  <div class="profile-roles">
+    <span class="role-cyan">CYBERSECURITY ANALYST</span>
+    <span class="role-green">ETHICAL HACKER</span>
+    <span class="role-soc">SOC / BLUE TEAM</span>
+    <span class="role-dfir">DIGITAL FORENSICS</span>
+  </div>
+
+  <div class="mini-socials">
+    <a href="https://www.linkedin.com/in/singuru-sudheer-b4916b345" target="_blank" rel="noopener">LINKEDIN ↗</a>
+    <a href="https://github.com/sudheer-infosec" target="_blank" rel="noopener">GITHUB ↗</a>
+  </div>
+</div>
         </div>
 
         <div class="hero-terminal panel">
@@ -203,9 +210,6 @@
             <div class="side-label"><small>BLUE TEAM</small><h3>WHITE HAT</h3><p>DEFENSE & RESPONSE</p><blockquote class="team-quote blue-quote">
     “Find the signal. Understand the evidence. Stop the threat.”
 </blockquote>
-<div class="battle-status" id="battleStatus">
-    ATTACK SIGNAL DETECTED
-</div>
 </div>
             <div class="defense-radar"><span></span><span></span><span></span></div>
             <div class="defense-pulse"></div>
@@ -229,6 +233,9 @@
           <button class="btn ghost" id="cinematicMode">◉ CINEMATIC MODE</button>
           <span>Visual simulation only — no real targets, scans or attacks are performed.</span>
         </div>
+        <div class="battle-status" id="battleStatus">
+    ATTACK SIGNAL DETECTED
+</div>
       </div>
     </section>
 
@@ -334,21 +341,242 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section-title"><div><span class="kicker">10 / PORTFOLIO</span><h2>Security <span>Projects</span></h2></div><span class="section-code">FLOATING // ACTIVE</span></div>
-      <div class="cards">
-        <article class="project panel float-card"><span class="project-no">01 // SIEM</span><h3>Wazuh SOC Detection Lab</h3><p>Endpoint telemetry, alert correlation, detection engineering and incident workflows.</p><div><span>SIEM</span><span>LOG ANALYSIS</span><span>IR</span></div></article>
-        <article class="project panel float-card"><span class="project-no">02 // IR</span><h3>TheHive Incident Response</h3><p>Case management, evidence tracking, observables and structured response workflows.</p><div><span>IR</span><span>DFIR</span><span>CASE MGMT</span></div></article>
-        <article class="project panel float-card"><span class="project-no">03 // DETECTION</span><h3>Sigma Detection Rules</h3><p>Portable detection logic for suspicious process, authentication and endpoint events.</p><div><span>SIGMA</span><span>THREAT HUNTING</span></div></article>
-        <article class="project panel float-card"><span class="project-no">04 // FORENSICS</span><h3>Volatility Memory Forensics</h3><p>Memory analysis, process artifacts, network evidence and forensic workflows.</p><div><span>VOLATILITY</span><span>DFIR</span></div></article>
-        <article class="project panel float-card"><span class="project-no">05 // CTI</span><h3>MISP Threat Intelligence</h3><p>IOC enrichment, threat intelligence concepts and structured indicator workflows.</p><div><span>MISP</span><span>CTI</span></div></article>
-        <article class="project panel float-card"><span class="project-no">06 // HONEYPOT</span><h3>Cowrie SSH Honeypot</h3><p>Controlled honeypot telemetry and analysis of simulated malicious behavior.</p><div><span>HONEYPOT</span><span>LOGS</span></div></article>
-        <article class="project panel float-card"><span class="project-no">07 // NETWORK</span><h3>Network Forensics — Wireshark</h3><p>Packet analysis, protocol investigation and suspicious traffic workflows.</p><div><span>PCAP</span><span>WIRESHARK</span></div></article>
-        <article class="project panel float-card"><span class="project-no">08 // MOBILE</span><h3>Mobile Forensics Lab</h3><p>Open-source mobile investigation concepts, artifacts and evidence handling.</p><div><span>MOBILE</span><span>FORENSICS</span></div></article>
-        <article class="project panel float-card"><span class="project-no">09 // EVIDENCE</span><h3>Digital Evidence Chain of Custody</h3><p>Evidence register, hashing and custody workflow for investigation documentation.</p><div><span>HASHING</span><span>CHAIN OF CUSTODY</span></div></article>
+   <!-- PROJECTS -->
+<section id="projects" class="section">
+
+  <div class="section-title">
+    <div>
+      <span class="kicker">10 / PORTFOLIO</span>
+      <h2>Security <span>Projects</span></h2>
+    </div>
+    <span class="section-code">LABS // DFIR // SOC</span>
+  </div>
+
+  <div class="cards">
+
+    <!-- 01 — WAZUH -->
+    <article class="project panel float-card project-wazuh">
+      <span class="project-no">01 // SOC / DETECTION ENGINEERING</span>
+
+      <h3>Wazuh SOC Detection Lab</h3>
+
+      <p>
+        SIEM detection engineering and incident investigation across Windows
+        and Linux endpoints using custom Wazuh rules, Sysmon, Suricata and
+        MITRE ATT&amp;CK-aligned investigation workflows.
+      </p>
+
+      <div>
+        <span>WAZUH</span>
+        <span>SYSMON</span>
+        <span>SURICATA</span>
+        <span>MITRE ATT&amp;CK</span>
       </div>
-    </section>
+
+      <div class="project-actions">
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/wazuh-soc-detection-lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn primary"
+        >VIEW PROJECT</a>
+
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/wazuh-soc-detection-lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >GITHUB ↗</a>
+      </div>
+    </article>
+
+
+    <!-- 02 — ZEUS -->
+    <article class="project panel float-card project-zeus">
+      <span class="project-no">02 // MALWARE / THREAT DETECTION</span>
+
+      <h3>Zeus Malware Hunt Lab</h3>
+
+      <p>
+        End-to-end malware detection and investigation workflow connecting
+        Suricata, Splunk, Sysmon, Volatility memory analysis and custom YARA
+        detection inside an isolated research environment.
+      </p>
+
+      <div>
+        <span>SPLUNK</span>
+        <span>SURICATA</span>
+        <span>VOLATILITY</span>
+        <span>YARA</span>
+      </div>
+
+      <div class="project-actions">
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Cybersecurity-SOC/Zeus-Malware-Hunt-Lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn primary"
+        >VIEW PROJECT</a>
+
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Cybersecurity-SOC/Zeus-Malware-Hunt-Lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >GITHUB ↗</a>
+      </div>
+    </article>
+
+
+    <!-- 03 — WINDOWS XP DFIR -->
+    <article class="project panel float-card project-dfir">
+      <span class="project-no">03 // DIGITAL FORENSICS / DFIR</span>
+
+      <h3>Windows XP DFIR Investigation</h3>
+
+      <p>
+        Educational DFIR investigation using public forensic evidence across
+        memory, disk and network analysis, with IOC extraction, ATT&amp;CK
+        mapping, YARA analysis and formal investigation reporting.
+      </p>
+
+      <div>
+        <span>VOLATILITY 3</span>
+        <span>AUTOPSY</span>
+        <span>WIRESHARK</span>
+        <span>YARA</span>
+      </div>
+
+      <div class="project-actions">
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Cyber-Crime-Digital-Forensics/Digital-Forensics-Investigation-Lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn primary"
+        >VIEW PROJECT</a>
+
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Cyber-Crime-Digital-Forensics/Digital-Forensics-Investigation-Lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >GITHUB ↗</a>
+      </div>
+    </article>
+
+
+    <!-- 04 — ANDROID FORENSICS -->
+    <article class="project panel float-card project-android">
+      <span class="project-no">04 // MOBILE FORENSICS</span>
+
+      <h3>Android Digital Forensics Lab</h3>
+
+      <p>
+        Educational Android evidence-acquisition and analysis lab covering
+        image integrity, AFF/E01 handling, Autopsy and aLEAPP artifacts,
+        SQLite/WAL analysis and forensic reporting.
+      </p>
+
+      <div>
+        <span>FTK IMAGER</span>
+        <span>AUTOPSY</span>
+        <span>ALEAPP</span>
+        <span>SQLITE</span>
+      </div>
+
+      <div class="project-actions">
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Cyber-Crime-Digital-Forensics/Android-Digital-Forensics"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn primary"
+        >VIEW PROJECT</a>
+
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Cyber-Crime-Digital-Forensics/Android-Digital-Forensics"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >GITHUB ↗</a>
+      </div>
+    </article>
+
+
+    <!-- 05 — COWRIE -->
+    <article class="project panel float-card project-cowrie">
+      <span class="project-no">05 // HONEYPOT / DETECTION</span>
+
+      <h3>Cowrie + Wazuh Honeypot Lab</h3>
+
+      <p>
+        Controlled SSH honeypot integrated with Wazuh to collect activity,
+        ingest Cowrie telemetry, apply custom detection rules and validate
+        real-time SIEM alerts.
+      </p>
+
+      <div>
+        <span>COWRIE</span>
+        <span>WAZUH</span>
+        <span>SSH</span>
+        <span>SIEM</span>
+      </div>
+
+      <div class="project-actions">
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Cowrie-Honeypot-Lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn primary"
+        >VIEW PROJECT</a>
+
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Cowrie-Honeypot-Lab"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >GITHUB ↗</a>
+      </div>
+    </article>
+
+
+    <!-- 06 — CUSTODYGUARD -->
+    <article class="project panel float-card project-custody">
+      <span class="project-no">06 // DFIR ENGINEERING</span>
+
+      <h3>CustodyGuard</h3>
+
+      <p>
+        Full-stack digital evidence management system for case tracking,
+        evidence integrity, chain-of-custody records and audit-driven
+        forensic workflows.
+      </p>
+
+      <div>
+        <span>REACT</span>
+        <span>FASTAPI</span>
+        <span>JWT / RBAC</span>
+        <span>SHA-256</span>
+      </div>
+
+      <div class="project-actions">
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Company-Related-Projects/CustodyGuard"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn primary"
+        >VIEW PROJECT</a>
+
+        <a
+          href="https://github.com/sudheer-infosec/sudheer-infosec.github.io/tree/main/Company-Related-Projects/CustodyGuard"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-btn"
+        >GITHUB ↗</a>
+      </div>
+    </article>
+
+  </div>
+</section>
 
     <!-- SERVICES -->
     <section id="services" class="section">
@@ -376,16 +604,76 @@
     </section>
 
     <!-- RESOURCE HUB -->
-    <section id="resources" class="section">
-      <div class="section-title"><div><span class="kicker">13 / KNOWLEDGE BASE</span><h2>Cybersecurity <span>Resource Hub</span></h2></div></div>
-      <div class="resource-banner panel">
-        <div><strong>115+</strong><span>Learning resources</span></div>
-        <div><strong>SOC</strong><span>Blue Team</span></div>
-        <div><strong>DFIR</strong><span>Forensics</span></div>
-        <div><strong>∞</strong><span>Continuous learning</span></div>
-        <a class="btn ghost" href="https://sudheer-infosec.github.io/cybersecurity-resource-library/" target="_blank" rel="noopener">OPEN RESOURCE LIBRARY ↗</a>
+<section id="resources" class="section">
+
+  <div class="section-title">
+    <div>
+      <span class="kicker">13 / KNOWLEDGE BASE</span>
+      <h2>Cybersecurity <span>Resource Hub</span></h2>
+    </div>
+
+    <span class="section-code">LEARN // PRACTICE // BUILD</span>
+  </div>
+
+  <div class="resource-banner panel">
+
+    <div class="resource-intro">
+      <span class="resource-label">CYBERSECURITY RESOURCE LIBRARY</span>
+
+      <h3>
+        A structured knowledge base for
+        <span>SOC, DFIR &amp; Cybersecurity</span>
+      </h3>
+
+      <p>
+        A curated cybersecurity learning library containing 115+ resources
+        organized for practical learning across security operations,
+        digital forensics, networking, Linux, ethical hacking and threat
+        analysis.
+      </p>
+
+      <a
+        class="btn ghost"
+        href="https://sudheer-infosec.github.io/cybersecurity-resource-library/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        OPEN RESOURCE LIBRARY ↗
+      </a>
+    </div>
+
+    <div class="resource-stats">
+
+      <div class="resource-stat">
+        <strong>115+</strong>
+        <span>Learning Resources</span>
       </div>
-    </section>
+
+      <div class="resource-stat">
+        <strong>SOC</strong>
+        <span>Blue Team &amp; SIEM</span>
+      </div>
+
+      <div class="resource-stat">
+        <strong>DFIR</strong>
+        <span>Digital Forensics</span>
+      </div>
+
+      <div class="resource-stat">
+        <strong>CTI</strong>
+        <span>Threat Intelligence</span>
+      </div>
+
+      <div class="resource-stat">
+        <strong>∞</strong>
+        <span>Continuous Learning</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
     <!-- =========================================================
      14 / METHOD
@@ -648,3 +936,5 @@
   <script src="js/app.js"></script>
 </body>
 </html>
+
+
