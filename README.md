@@ -569,15 +569,6 @@ Focused on building practical cybersecurity capability through security laborato
 
 ---
 
-# Contribution Snake
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/sudheer-infosec/sudheer-infosec/output/github-contribution-grid-snake.svg" alt="Contribution Snake"/>
-
-</div>
-
----
 # Current Focus
 
 <div align="center">
