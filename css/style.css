@@ -2495,3 +2495,74 @@ footer{max-width:1200px;margin:0 auto;padding:30px 24px 45px;border-top:1px soli
   color: #ffffff !important;
   border-color: rgba(255, 255, 255, 0.55) !important;
 }
+/* =========================================================
+   SYMBOL RENDERING SAFEGUARD
+   Keeps arrows, bullets and special symbols fully visible.
+   ========================================================= */
+
+[aria-hidden="true"] {
+  font-family: Arial, "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: visible;
+}
+
+.chain i {
+  font-family: Arial, "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-block;
+  overflow: visible;
+}
+
+.quote-mark {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1;
+}
+
+.skill-icon,
+.cert-emblem,
+.vs-ring {
+  overflow: visible;
+}
+/* =========================================================
+   CERTIFICATION EMBLEM — PERFECT CENTER
+   ========================================================= */
+
+.cert-emblem {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+
+  border: 1px solid #3a3f46;
+  border-radius: 50%;
+
+  line-height: 0;
+  overflow: visible;
+}
+
+.cert-emblem svg {
+  width: 42px;
+  height: 42px;
+
+  display: block;
+  flex: 0 0 42px;
+
+  margin: 0;
+  padding: 0;
+
+  transform: none;
+  vertical-align: middle;
+}
